@@ -7,7 +7,9 @@ chmod +x update.sh
 mkdir ~/logs
 touch ~/logs/cronlog
 crontab -e
-
+````
+Adding this script into Cron to run every Monday at 5:00 am
+```
 MAILTO=pi
 SHELL=/bin/sh
 PATH=~/bin:/usr/bin/:/bin
