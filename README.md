@@ -2,6 +2,7 @@
 
 ## update.sh 
 Script for updating RPI.
+
 Adding this script into Cron to run every Monday at 5:00 am
 ```
 0 5 * * MON sudo sh update.sh &>>~/logs/cronlog
@@ -9,6 +10,7 @@ Adding this script into Cron to run every Monday at 5:00 am
 
 ## downloadMagPiPdfs.sh
 Script for downloading all MagPi pdfs from raspberrypi.org.
+
 Adding this script into Cron to run every week at midnight.
 ```
 0 0 1 * * (cd ~/MagPi/; sh downloadMagPiPdfs.sh) &>>~/logs/cronlog
