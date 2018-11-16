@@ -1,5 +1,8 @@
 # Scripts
 
+## backupHome.sh
+Script for backup /home/ into /var/backups/
+
 ## update.sh 
 Script for updating RPI.
 
