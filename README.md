@@ -1,5 +1,15 @@
 # Scripts
 
+## backupHome.sh
+Script for backup /home/ into /var/backups/
+
+Adding this script into Cron to run daily/ weekly/ monthly
+```
+30 5 * * * sh /home/pi/Scripts/backupHomeDaily.sh >> ~/logs/cronlog 2>&1
+0 6 * * FRI sh /home/pi/Scripts/backupHomeMonthly.sh >> ~/logs/cronlog 2>&1
+0 6 1 * * sh /home/pi/Scripts/backupHomeWeekly.sh >> ~/logs/cronlog 2>&1
+```
+
 ## update.sh 
 Script for updating RPI.
 
