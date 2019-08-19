@@ -1,0 +1,11 @@
+sudo lsblk -o UUID,NAME,FSTYPE,SIZE,MOUNTPOINT,LABEL,MODEL
+ex-FAT: sudo apt-get install exfat-fuse
+NTFS: sudo apt-get install ntfs-3g
+sudo blkid
+sudo mkdir /mnt/mydisk
+sudo mount /dev/sda1 /mnt/mydisk
+ls /mnt/mydisk
+
+sudo nano /etc/fstab
+UUID=5C24-1453 /mnt/mydisk FSTYPE defaults,auto,umask=000,users,rw,nofail,,x-systemd.device-timeout=30 0 0
+sudo umount /mnt/mydisk
