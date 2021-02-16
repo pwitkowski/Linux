@@ -1,0 +1,1 @@
+for(){$p=(Get-Process|Sort-Object -D CPU|Select-Object -First ($Host.UI.RawUI.WindowSize.Height-4)|Out-String).trim();Clear-Host;""+(Get-date);$p;Start-Sleep 1}top 

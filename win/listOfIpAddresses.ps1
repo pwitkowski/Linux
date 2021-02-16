@@ -1,0 +1,1 @@
+Get-NetIPAddress -AddressState Preferred|Select-Object IPAddress,InterfaceAlias

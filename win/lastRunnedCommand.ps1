@@ -1,0 +1,1 @@
+$i=Get-ItemProperty HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\RunMRU; $i.MRUList.ToCharArray()|ForEach-Object{$i.$_.trim('\1')}

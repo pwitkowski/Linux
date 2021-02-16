@@ -1,0 +1,1 @@
+Get-ChildItem -r $HOME|Get-Item -s *|Where-Object Stream -ne ':$DATA'|Select-Object Filename,Stream
